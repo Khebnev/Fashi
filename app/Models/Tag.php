@@ -12,6 +12,8 @@ class Tag extends Model
 
     use Sluggable;
 
+    protected $fillable = ['title'];
+
     public function products()
     {
         return $this->belongsToMany(Product::class);
