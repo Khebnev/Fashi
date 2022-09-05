@@ -83,6 +83,7 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        dd(__METHOD__);
+        Category::destroy($id);
+        return redirect()->route('categories.index')->with('success', 'Категория успешно удалена');
     }
 }
