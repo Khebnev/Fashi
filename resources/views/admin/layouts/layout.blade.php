@@ -185,7 +185,7 @@
                                 <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
-                        <ul class="nav nav-treeview">
+                        <ul class="nav">
                             <li class="nav-item">
                                 <a href="{{ route('categories.index') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
@@ -209,8 +209,34 @@
 
 
     </aside>
+    <div class="content-wrapper">
 
-    @yield('content')
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-12">
+                    {{-- Ошибки --}}
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    {{-- успехи --}}
+                    @if (session()->has('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
+                </div>
+            </div>
+        </div>
+
+        @yield('content')
+    </div>
 
     <footer class="main-footer">
         <div class="float-right d-none d-sm-block">
