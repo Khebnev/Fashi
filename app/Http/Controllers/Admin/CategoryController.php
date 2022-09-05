@@ -42,7 +42,7 @@ class CategoryController extends Controller
             'title' => 'required',
         ]);
         Category::create($request->all());
-        return redirect()->route('categories.index')->with('succes', 'Категория добавлена');
+        return redirect()->route('categories.index')->with('success', 'Категория добавлена');
     }
 
 
