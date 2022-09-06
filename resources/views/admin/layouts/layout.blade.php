@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | Blank Page</title>
+    <title>Fashi | Pet-project</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 
@@ -219,6 +219,29 @@
                                 <a href="{{ route('tags.create') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Новый тег</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-archive"></i>
+                            <p>
+                                Товар
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="{{ route('products.index') }}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Список товаров</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('products.create') }}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Новый Товар</p>
                                 </a>
                             </li>
                         </ul>
