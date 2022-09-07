@@ -55,7 +55,12 @@ class AdminProductController extends Controller
         ]);
         $data = $request->all();
 //        dd($data);
-        Product::create($request->all());
+        if($request->hasFile('thumbnail')){
+            $folder = date('Y-m-d');
+            $data['thumbnail'] = $request->file('thumbnail')->store("images/{$folder}");
+        }
+        $product = Product::create($data);
+//        Product::create($request->all());
         return redirect()->route('products.index')->with('success', 'Товар добавлен');
     }
 

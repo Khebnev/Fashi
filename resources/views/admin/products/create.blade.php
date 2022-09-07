@@ -46,29 +46,29 @@
 
                             <div class="form-group">
                                 <label for="description">Описание товара</label>
-                                <textarea name="description" class="form-control" id="description" rows="3" placeholder="Цитата ..."></textarea>
+                                <textarea name="description" class="form-control @error('description') is-invalid @enderror" id="description" rows="3" placeholder="Цитата ..."></textarea>
                             </div>
 
                             <div class="form-group">
-                                <label for="color">Бренд</label>
-                                <select class="form-control" id="brand" name="color">
-                                    <option>Color blue</option>
+                                <label for="brand">Бренд</label>
+                                <select class="form-control @error('brand') is-invalid @enderror" id="brand" name="brand">
+                                    <option>Brand 1</option>
                                 </select>
                             </div>
+
                             <div class="form-group">
-                                <label for="size">Бренд</label>
-                                <select class="form-control" id="brand" name="size">
+                                <label for="size">Размер</label>
+                                <select class="form-control @error('size') is-invalid @enderror" id="brand" name="size">
                                     <option>Size XL</option>
                                 </select>
                             </div>
 
                             <div class="form-group">
-                                <label for="brand">Бренд</label>
-                                <select class="form-control" id="brand" name="brand">
-                                        <option>Brand 1</option>
+                                <label for="color">Цвет</label>
+                                <select class="form-control @error('color') is-invalid @enderror" id="brand" name="color">
+                                    <option>Color blue</option>
                                 </select>
                             </div>
-
 
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -91,7 +91,7 @@
 
                             <div class="form-group">
                                 <label for="price">Цена</label>
-                                <input type="text" name="price" class="form-control" id="price">
+                                <input type="text" name="price" class="form-control @error('price') is-invalid @enderror" id="price">
                             </div>
 
                             <div class="form-group">
