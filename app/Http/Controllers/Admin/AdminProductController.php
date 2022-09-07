@@ -7,6 +7,7 @@ use App\Models\Category;
 use App\Models\Product;
 use App\Models\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class AdminProductController extends Controller
 {
@@ -54,11 +55,9 @@ class AdminProductController extends Controller
             'thumbnail' => 'nullable|image',
         ]);
         $data = $request->all();
-//        dd($data);
-        if($request->hasFile('thumbnail')){
-            $folder = date('Y-m-d');
-            $data['thumbnail'] = $request->file('thumbnail')->store("images/{$folder}");
-        }
+//
+        $data['thumbnail'] = Product::uploadImage($request);
+
         $product = Product::create($data);
 //        Product::create($request->all());
         $product->tags()->sync($request->tags);
@@ -92,9 +91,22 @@ class AdminProductController extends Controller
     {
         $request->validate([
             'title' => 'required',
+            'category_id' => 'required',
+            'description' => 'required',
+            'brand' => 'required',
+            'color' => 'required',
+            'size' => 'required',
+            'price' => 'required|numeric',
+            'thumbnail' => 'nullable|image',
         ]);
+
         $product = Product::find($id);
-        $product->update($request->all());
+        $data = $request->all();
+
+        $data['thumbnail'] = Product::uploadImage($request, $product->thumbnail);
+
+        $product->update($data);
+        $product->tags()->sync($request->tags);
         return  redirect()->route('products.index')->with('success', 'Изменения сохранены');
     }
 

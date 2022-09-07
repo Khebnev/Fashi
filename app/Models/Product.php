@@ -2,9 +2,13 @@
 
 namespace App\Models;
 
+use Illuminate\Http\Request;
 use Cviebrock\EloquentSluggable\Sluggable;
+//use http\Env\Request;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
+
 
 
 class Product extends Model
@@ -23,6 +27,18 @@ class Product extends Model
     public function category()
     {
         return $this->belongsTo(Category::class);
+    }
+
+    public static function uploadImage(Request $request, $image = null)
+    {
+        if($request->hasFile('thumbnail')) {
+            if($image) {
+                Storage::delete($image);
+            }
+            $folder = date('Y-m-d');
+            return $request->file('thumbnail')->store("images/{$folder}");
+        }
+        return null;
     }
 
     public function sluggable(): array
