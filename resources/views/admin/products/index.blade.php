@@ -43,6 +43,10 @@
                                             <th>Наименование</th>
                                             <th>Категория</th>
                                             <th>Теги</th>
+                                            <th>Бренд</th>
+                                            <th>Размер</th>
+                                            <th>Цвет</th>
+                                            <th>Цена</th>
                                             <th>Дата</th>
                                             <th>Actions</th>
                                         </tr>
@@ -54,6 +58,10 @@
                                                 <td>{{ $product->title }}</td>
                                                 <td>{{ $product->category->title }}</td>
                                                 <td>{{ $product->tags }}</td>
+                                                <td>{{ $product->brand }}</td>
+                                                <td>{{ $product->size }}</td>
+                                                <td>{{ $product->color }}</td>
+                                                <td>{{ $product->price }}</td>
                                                 <td>{{ $product->created_at }}</td>
                                                 <td>
                                                     <a href="{{ route('products.edit', ['product' => $product->id]) }}" class="btn btn-info btn-sm float-left mr-1">

@@ -42,10 +42,19 @@ class AdminProductController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+
         $request->validate([
             'title' => 'required',
+            'category_id' => 'required',
+            'description' => 'required',
+            'brand' => 'required',
+            'color' => 'required',
+            'size' => 'required',
+            'price' => 'required|numeric',
+            'thumbnail' => 'nullable|image',
         ]);
+        $data = $request->all();
+//        dd($data);
         Product::create($request->all());
         return redirect()->route('products.index')->with('success', 'Товар добавлен');
     }

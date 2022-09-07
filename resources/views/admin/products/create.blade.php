@@ -43,6 +43,33 @@
                                 </div>
                             </div>
 
+
+                            <div class="form-group">
+                                <label for="description">Описание товара</label>
+                                <textarea name="description" class="form-control" id="description" rows="3" placeholder="Цитата ..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="color">Бренд</label>
+                                <select class="form-control" id="brand" name="color">
+                                    <option>Color blue</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="size">Бренд</label>
+                                <select class="form-control" id="brand" name="size">
+                                    <option>Size XL</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="brand">Бренд</label>
+                                <select class="form-control" id="brand" name="brand">
+                                        <option>Brand 1</option>
+                                </select>
+                            </div>
+
+
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="tags">Теги</label>
