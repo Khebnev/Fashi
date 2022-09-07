@@ -61,6 +61,7 @@ class AdminProductController extends Controller
         }
         $product = Product::create($data);
 //        Product::create($request->all());
+        $product->tags()->sync($request->tags);
         return redirect()->route('products.index')->with('success', 'Товар добавлен');
     }
 
