@@ -17,7 +17,7 @@ class AdminProductController extends Controller
      */
     public function index()
     {
-        $products = Product::paginate(2);
+        $products = Product::paginate(5);
 
         return view('admin.products.index', compact('products'));
     }
@@ -75,7 +75,10 @@ class AdminProductController extends Controller
     public function edit($id)
     {
         $product = Product::find($id);
-        return  view('admin.products.edit', compact('product'));
+        $categories = Category::pluck('title', 'id')->all();
+        $tags = Tag::pluck('title', 'id')->all();
+//        $product = Product::find($id);
+        return  view('admin.products.edit', compact('categories', 'tags', 'product'));
     }
 
     /**
