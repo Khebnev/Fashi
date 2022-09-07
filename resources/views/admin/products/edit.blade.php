@@ -96,7 +96,6 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <div>{{ $product->thumnbail }}</div>
                                     <label for="thumbnail">Изображение</label>
                                     <div class="input-group">
                                         <div class="custom-file">
@@ -104,6 +103,7 @@
                                             <label class="custom-file-label" for="thumbnail">Выберите файл</label>
                                         </div>
                                     </div>
+                                    <div><img src="{{ $product->getImage() }}" alt="" class="img-thumbnail mt-2" width="150"></div>
                                 </div>
 
                                 <!-- /.card-body -->

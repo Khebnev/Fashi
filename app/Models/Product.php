@@ -41,6 +41,14 @@ class Product extends Model
         return null;
     }
 
+    public function getImage()
+    {
+        if(!$this->thumbnail) {
+            return asset("no-image.png");
+        }
+        return asset("uploads/{$this->thumbnail}");
+    }
+
     public function sluggable(): array
     {
         return [
