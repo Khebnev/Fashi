@@ -26,3 +26,6 @@ Route::get('/logout', 'UserController@logout')->name('logout');
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
+
+Route::get('/shop', 'ProductController@index')->name('shop');
+Route::get('/product', 'ProductController@show')->name('products.single');
