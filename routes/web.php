@@ -7,18 +7,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function (){
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'admin'], function (){
    Route::get('/', 'MainController@index')->name('admin.index');
    Route::resource('/categories', 'CategoryController');
    Route::resource('/tags', 'TagController');
    Route::resource('/products', 'AdminProductController');
 });
 
-Route::get('/register', 'UserController@create')->name('register.create');
-Route::post('/register', 'UserController@store')->name('register.store');
-
-Route::get('/login', 'UserController@loginForm')->name('login.create');
-Route::post('/login', 'UserController@login')->name('login');
+Route::group(['middleware' => 'guest'], function (){
+    Route::get('/register', 'UserController@create')->name('register.create');
+    Route::post('/register', 'UserController@store')->name('register.store');
+    Route::get('/login', 'UserController@loginForm')->name('login.create');
+    Route::post('/login', 'UserController@login')->name('login');
+});
 
 Route::get('/logout', 'UserController@logout')->name('logout');
 
