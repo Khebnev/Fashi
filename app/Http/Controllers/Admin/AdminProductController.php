@@ -116,9 +116,13 @@ class AdminProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($id, Request $request)
     {
-        Product::destroy($id);
-        return redirect()->route('products.index')->with('success', 'Категория успешно удалена');
+        $product = Product::find($id);
+        $product->tags()->sync($request->tags);
+        Storage::delete($product->thumbnail);
+        $product->delete();
+//        Product::destroy($id);
+        return redirect()->route('products.index')->with('success', 'Товар успешно удален');
     }
 }
