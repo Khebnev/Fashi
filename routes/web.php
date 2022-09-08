@@ -14,3 +14,6 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function (){
    Route::resource('/products', 'AdminProductController');
 });
 
+Route::get('/register', 'UserController@create')->name('register.create');
+Route::post('/register', 'UserController@store')->name('register.store');
+
