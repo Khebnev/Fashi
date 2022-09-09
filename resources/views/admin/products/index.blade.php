@@ -56,7 +56,8 @@
                                             <tr>
                                                 <td>{{ $product->id }}</td>
                                                 <td>{{ $product->title }}</td>
-                                                <td>{{ $product->category->title }}</td>
+{{--                                                <td>{{ $product->category->title }}</td>--}}
+                                                <td>{{ $product->category['title'] }}</td>
                                                 <td>{{ $product->tags->pluck('title')->join(', ') }}</td>
                                                 <td>{{ $product->brand }}</td>
                                                 <td>{{ $product->size }}</td>

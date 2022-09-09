@@ -104,6 +104,11 @@ class AdminProductController extends Controller
         $data = $request->all();
 
         $data['thumbnail'] = Product::uploadImage($request, $product->thumbnail);
+//        if($file = Product::uploadImage($request, $product->thumbnail))
+//        {
+//            $data['thumbnail'] = $file;
+//        }
+
 
         $product->update($data);
         $product->tags()->sync($request->tags);

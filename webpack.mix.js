@@ -13,6 +13,7 @@ mix.scripts([
     'resources/assets/admin/plugins/jquery/jquery.min.js',
     'resources/assets/admin/plugins/bootstrap/js/bootstrap.bundle.min.js',
     'resources/assets/admin/plugins/select2/js/select2.full.js',
+    'resources/assets/admin/plugins/bs-custom-file-input/bs-custom-file-input.js',
     'resources/assets/admin/js/adminlte.min.js',
     'resources/assets/admin/js/demo.js'
 ], 'public/assets/admin/js/admin.js');
@@ -40,17 +41,17 @@ mix.styles([
 ], 'public/assets/front/css/front.css');
 
 mix.scripts([
-    'resources/assets/front/js/bootstrap.min.js',
-    'resources/assets/front/js/imagesloaded.pkgd.min.js',
-    'resources/assets/front/js/jquery.countdown.min.js',
-    'resources/assets/front/js/jquery.dd.min.js',
-    'resources/assets/front/js/jquery.nice-select.min.js',
-    'resources/assets/front/js/jquery.slicknav.js',
-    'resources/assets/front/js/jquery.zoom.min.js',
     'resources/assets/front/js/jquery-3.3.1.min.js',
+    'resources/assets/front/js/bootstrap.min.js',
     'resources/assets/front/js/jquery-ui.min.js',
-    'resources/assets/front/js/main.js',
-    'resources/assets/front/js/owl.carousel.min.js'
+    'resources/assets/front/js/jquery.countdown.min.js',
+    'resources/assets/front/js/jquery.nice-select.min.js',
+    'resources/assets/front/js/jquery.zoom.min.js',
+    'resources/assets/front/js/jquery.dd.min.js',
+    'resources/assets/front/js/jquery.slicknav.js',
+    'resources/assets/front/js/owl.carousel.min.js',
+    'resources/assets/front/js/imagesloaded.pkgd.min.js',
+    'resources/assets/front/js/main.js'
 ], 'public/assets/front/js/front.js');
 
 mix.copyDirectory('resources/assets/front/fonts', 'public/assets/front/fonts');
