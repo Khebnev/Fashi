@@ -13,8 +13,11 @@ class ProductController extends Controller
         return view('products.shop', compact('products'));
     }
 
-    public function show()
+    public function show($slug)
     {
-        return view('products.show');
+        $product = Product::where('slug', $slug)->firstOrFail();
+        $product->views += 1;
+        $product->update();
+        return view('products.show', compact('product'));
     }
 }

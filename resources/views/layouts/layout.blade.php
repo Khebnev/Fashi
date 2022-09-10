@@ -61,7 +61,7 @@
             <div class="row">
                 <div class="col-lg-2 col-md-2">
                     <div class="logo">
-                        <a href="./index.html">
+                        <a href="{{ route('home') }}">
                             <img src="/assets/front/img/logo.png" alt="">
                         </a>
                     </div>
@@ -153,8 +153,8 @@
             </div>
             <nav class="nav-menu mobile-menu">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./shop.html">Shop</a></li>
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li><a href="{{ route('shop') }}">Shop</a></li>
                     <li><a href="#">Collection</a>
                         <ul class="dropdown">
                             <li><a href="#">Men's</a></li>
@@ -188,9 +188,14 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumb-text">
-                    <a href="#"><i class="fa fa-home"></i> Home</a>
+                    <a href="{{ route('home') }}"><i class="fa fa-home"></i> Home</a>
                     <span>Shop</span>
                 </div>
+{{--                <ol class="breadcrumb-text breadcrumb hidden-xs-down">--}}
+{{--                    <li><a href="{{ route('home') }}"><i class="fa fa-home"></i> Home</a></li>--}}
+{{--                    <li class="breadcrumb-item"><a href="{{ route('shop') }}"><span>Shop</span></a></li>--}}
+{{--                    --}}{{--                    <li class="breadcrumb-item">{{ $product->title }}</li>--}}
+{{--                </ol>--}}
             </div>
         </div>
     </div>
@@ -318,7 +323,7 @@
 <!-- Footer Section End -->
 
 <!-- Js Plugins -->
-<script scr="{{ asset('assets/front/js/front.js') }}"></script>
+<script scr="{{ asset('/assets/front/js/front.js') }}"></script>
 
 </body>
 

@@ -1,4 +1,7 @@
 @extends('layouts.layout')
+
+@section('title', 'Fashi | Template :: ' . $product->title)
+
     @section('content')
         <div class="col-lg-9 order-1 order-lg-2">
             <div class="row">
