@@ -28,4 +28,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/shop', 'ProductController@index')->name('shop');
-Route::get('/product', 'ProductController@show')->name('products.single');
+Route::get('/product/{slug}', 'ProductController@show')->name('products.single');
+
+Route::get('/category/{slug}', 'CategoryController@show')->name('category.single');
+Route::get('/tag/{slug}', 'TagController@show')->name('tags.single');
