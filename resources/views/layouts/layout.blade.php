@@ -319,6 +319,19 @@
 
 <!-- Js Plugins -->
 <script scr="{{ asset('assets/front/js/front.js') }}"></script>
+<!-- <script scr="{{ 'resourses/assets/front/js/bootstrap.min.js' }}"></script>
+<script scr="{{ 'resourses/assets/front/js/imagesloaded.pkgd.min.js '}}"></script>
+<script scr="{{ 'resourses/assets/front/js/jquery-3.3.1.min.js' }}"></script>
+<script scr="{{ 'resourses/assets/front/js/jquery-ui.min.js' }}"></script>
+<script scr="{{ 'resourses/assets/front/js/jquery.countdown.min.js' }}"></script>
+<script scr="{{ 'resourses/assets/front/js/jquery.dd.min.js' }}"></script>
+<script scr="{{ 'resourses/assets/front/js/jquery.nice-select.min.js' }}"></script>
+<script scr="{{ 'resourses/assets/front/js/jquery.slicknav.js' }}"></script>
+<script scr="{{ 'resourses/assets/front/js/jquery.zoom.min.js' }}"></script>
+<script scr="{{ 'resourses/assets/front/js/main.js '}}"></script>
+<script scr="{{ 'resourses/assets/front/js/owl.carousel.min.js' }}"></script> -->
+
+
 
 </body>
 
