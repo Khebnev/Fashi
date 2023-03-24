@@ -24,7 +24,7 @@ Route::group(['middleware' => 'guest'], function (){
 Route::get('/logout', 'UserController@logout')->name('logout');
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 })->name('home');
 
 Route::get('/shop', 'ProductController@index')->name('shop');

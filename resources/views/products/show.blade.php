@@ -23,10 +23,11 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
+                    <!-- add foreach to fix it -->
                     <div class="product-details">
                         <div class="pd-title">
-                            <span>oranges</span>
-                            <h3>Pure Pineapple</h3>
+                            <span>{{ $product->color}}</span>
+                            <h3>{{ $product->title }}</h3>
                             <a href="#" class="heart-icon"><i class="icon_heart_alt"></i></a>
                         </div>
                         <div class="pd-rating">
@@ -38,9 +39,8 @@
                             <span>(5)</span>
                         </div>
                         <div class="pd-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur ing elit, sed do eiusmod tempor sum dolor
-                                sit amet, consectetur adipisicing elit, sed do mod tempor</p>
-                            <h4>$495.00 <span>629.99</span></h4>
+                            <p>{{ $product->description  }}</p>
+                            <h4>${{ $product->price }} <span>${{ $product->price * 2}}</span></h4>
                         </div>
                         <div class="pd-color">
                             <h6>Color</h6>

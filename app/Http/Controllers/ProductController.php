@@ -15,6 +15,9 @@ class ProductController extends Controller
 
     public function show()
     {
-        return view('products.show');
+        // $products = Product::with('category', 'tags')->first();
+        $product = Product::firstOrFail();
+        $product->update();
+        return view('products.show', compact('product'));
     }
 }
