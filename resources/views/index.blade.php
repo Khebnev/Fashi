@@ -70,7 +70,7 @@
                     <div class="col-lg-2 col-md-2">
                         <div class="logo">
                             <a href="./index.html">
-                                <img src="img/logo.png" alt="">
+                                <img src="/assets/front/img/logo.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                                         <table>
                                             <tbody>
                                                 <tr>
-                                                    <td class="si-pic"><img src="img/select-product-1.jpg" alt=""></td>
+                                                    <td class="si-pic"><img src="/assets/front/img/select-product-1.jpg" alt=""></td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
                                                             <p>$60.00 x 1</p>
@@ -113,7 +113,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="si-pic"><img src="img/select-product-2.jpg" alt=""></td>
+                                                    <td class="si-pic"><img src="/assets/front/img/select-product-2.jpg" alt=""></td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
                                                             <p>$60.00 x 1</p>
@@ -237,7 +237,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="single-banner">
-                        <img src="img/banner-1.jpg" alt="">
+                        <img src="/assets/front/img/banner-1.jpg" alt="">
                         <div class="inner-text">
                             <h4>Men’s</h4>
                         </div>
@@ -245,7 +245,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="single-banner">
-                        <img src="img/banner-2.jpg" alt="">
+                        <img src="/assets/front/img/banner-2.jpg" alt="">
                         <div class="inner-text">
                             <h4>Women’s</h4>
                         </div>
@@ -253,7 +253,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="single-banner">
-                        <img src="img/banner-3.jpg" alt="">
+                        <img src="/assets/front/img/banner-3.jpg" alt="">
                         <div class="inner-text">
                             <h4>Kid’s</h4>
                         </div>
@@ -286,7 +286,7 @@
                     <div class="product-slider owl-carousel">
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="img/products/women-1.jpg" alt="">
+                                <img src="/assets/front/img/products/women-1.jpg" alt="">
                                 <div class="sale">Sale</div>
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
@@ -310,7 +310,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="img/products/women-2.jpg" alt="">
+                                <img src="/assets/front/img/products/women-2.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -332,7 +332,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="img/products/women-3.jpg" alt="">
+                                <img src="/assets/front/img/products/women-3.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -354,7 +354,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="img/products/women-4.jpg" alt="">
+                                <img src="/assets/front/img/products/women-4.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -434,7 +434,7 @@
                     <div class="product-slider owl-carousel">
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="img/products/man-1.jpg" alt="">
+                                <img src="/assets/front/img/products/man-1.jpg" alt="">
                                 <div class="sale">Sale</div>
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
@@ -458,7 +458,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="img/products/man-2.jpg" alt="">
+                                <img src="/assets/front/img/products/man-2.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -480,7 +480,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="img/products/man-3.jpg" alt="">
+                                <img src="/assets/front/img/products/man-3.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -502,7 +502,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="img/products/man-4.jpg" alt="">
+                                <img src="/assets/front/img/products/man-4.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -589,7 +589,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="single-latest-blog">
-                        <img src="img/latest-1.jpg" alt="">
+                        <img src="/assets/front/img/latest-1.jpg" alt="">
                         <div class="latest-text">
                             <div class="tag-list">
                                 <div class="tag-item">
@@ -610,7 +610,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-latest-blog">
-                        <img src="img/latest-2.jpg" alt="">
+                        <img src="/assets/front/img/latest-2.jpg" alt="">
                         <div class="latest-text">
                             <div class="tag-list">
                                 <div class="tag-item">
@@ -631,7 +631,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-latest-blog">
-                        <img src="img/latest-3.jpg" alt="">
+                        <img src="/assets/front/img/latest-3.jpg" alt="">
                         <div class="latest-text">
                             <div class="tag-list">
                                 <div class="tag-item">
@@ -656,7 +656,7 @@
                     <div class="col-lg-4">
                         <div class="single-benefit">
                             <div class="sb-icon">
-                                <img src="img/icon-1.png" alt="">
+                                <img src="/assets/front/img/icon-1.png" alt="">
                             </div>
                             <div class="sb-text">
                                 <h6>Free Shipping</h6>
@@ -667,7 +667,7 @@
                     <div class="col-lg-4">
                         <div class="single-benefit">
                             <div class="sb-icon">
-                                <img src="img/icon-2.png" alt="">
+                                <img src="/assets/front/img/icon-2.png" alt="">
                             </div>
                             <div class="sb-text">
                                 <h6>Delivery On Time</h6>
@@ -678,7 +678,7 @@
                     <div class="col-lg-4">
                         <div class="single-benefit">
                             <div class="sb-icon">
-                                <img src="img/icon-1.png" alt="">
+                                <img src="/assets/front/img/icon-1.png" alt="">
                             </div>
                             <div class="sb-text">
                                 <h6>Secure Payment</h6>
@@ -698,27 +698,27 @@
             <div class="logo-carousel owl-carousel">
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-1.png" alt="">
+                        <img src="/assets/front/img/logo-carousel/logo-1.png" alt="">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-2.png" alt="">
+                        <img src="/assets/front/img/logo-carousel/logo-2.png" alt="">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-3.png" alt="">
+                        <img src="/assets/front/img/logo-carousel/logo-3.png" alt="">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-4.png" alt="">
+                        <img src="/assets/front/img/logo-carousel/logo-4.png" alt="">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-5.png" alt="">
+                        <img src="/assets/front/img/logo-carousel/logo-5.png" alt="">
                     </div>
                 </div>
             </div>
@@ -733,7 +733,7 @@
                 <div class="col-lg-3">
                     <div class="footer-left">
                         <div class="footer-logo">
-                            <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                            <a href="#"><img src="/assets/front/img/footer-logo.png" alt=""></a>
                         </div>
                         <ul>
                             <li>Address: 60-49 Road 11378 New York</li>
@@ -792,7 +792,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </div>
                         <div class="payment-pic">
-                            <img src="img/payment-method.png" alt="">
+                            <img src="/assets/front/img/payment-method.png" alt="">
                         </div>
                     </div>
                 </div>
