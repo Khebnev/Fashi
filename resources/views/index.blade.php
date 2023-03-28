@@ -180,8 +180,8 @@
                                 <li><a href="./shopping-cart.html">Shopping Cart</a></li>
                                 <li><a href="./check-out.html">Checkout</a></li>
                                 <li><a href="./faq.html">Faq</a></li>
-                                <li><a href="./register.html">Register</a></li>
-                                <li><a href="./login.html">Login</a></li>
+                                <li><a href="{{ route('register.store') }}">Register</a></li>
+                                <li><a href="{{ route('login') }}">Login</a></li>
                             </ul>
                         </li>
                     </ul>
