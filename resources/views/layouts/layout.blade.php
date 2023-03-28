@@ -153,7 +153,7 @@
             </div>
             <nav class="nav-menu mobile-menu">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="{{ route('home') }}">Home</a></li>
                     <li><a href="./shop.html">Shop</a></li>
                     <li><a href="#">Collection</a>
                         <ul class="dropdown">
