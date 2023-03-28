@@ -225,6 +225,8 @@
 
     $('.product-pic-zoom').zoom();
     
+
+    console.log('here is a problem');
     /*-------------------
 		Quantity change
 	--------------------- */

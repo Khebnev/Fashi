@@ -890,6 +890,8 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
 
     $('.product-pic-zoom').zoom();
     
+
+    console.log('here is a problem');
     /*-------------------
 		Quantity change
 	--------------------- */
