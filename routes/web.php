@@ -30,3 +30,4 @@ Route::get('/', function () {
 Route::get('/shop', 'ProductController@index')->name('shop');
 Route::get('/product', 'ProductController@show')->name('products.single');
 Route::get('/contact', 'ContactController@index')->name('contact');
+Route::get('/blog', 'BlogController@index')->name('blog');
