@@ -70,7 +70,7 @@
                     <div class="col-lg-2 col-md-2">
                         <div class="logo">
                             <a href="./index.html">
-                                <img src="img/logo.png" alt="">
+                                <img src="/assets/front/img/logo.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                                         <table>
                                             <tbody>
                                                 <tr>
-                                                    <td class="si-pic"><img src="img/select-product-1.jpg" alt=""></td>
+                                                    <td class="si-pic"><img src="/assets/front/img/select-product-1.jpg" alt=""></td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
                                                             <p>$60.00 x 1</p>
@@ -111,7 +111,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="si-pic"><img src="img/select-product-2.jpg" alt=""></td>
+                                                    <td class="si-pic"><img src="/assets/front/img/select-product-2.jpg" alt=""></td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
                                                             <p>$60.00 x 1</p>
@@ -232,7 +232,7 @@
                             <div class="recent-blog">
                                 <a href="#" class="rb-item">
                                     <div class="rb-pic">
-                                        <img src="img/blog/recent-1.jpg" alt="">
+                                        <img src="/assets/front/img/blog/recent-1.jpg" alt="">
                                     </div>
                                     <div class="rb-text">
                                         <h6>The Personality Trait That Makes...</h6>
@@ -241,7 +241,7 @@
                                 </a>
                                 <a href="#" class="rb-item">
                                     <div class="rb-pic">
-                                        <img src="img/blog/recent-2.jpg" alt="">
+                                        <img src="/assets/front/img/blog/recent-2.jpg" alt="">
                                     </div>
                                     <div class="rb-text">
                                         <h6>The Personality Trait That Makes...</h6>
@@ -250,7 +250,7 @@
                                 </a>
                                 <a href="#" class="rb-item">
                                     <div class="rb-pic">
-                                        <img src="img/blog/recent-3.jpg" alt="">
+                                        <img src="/assets/front/img/blog/recent-3.jpg" alt="">
                                     </div>
                                     <div class="rb-text">
                                         <h6>The Personality Trait That Makes...</h6>
@@ -259,7 +259,7 @@
                                 </a>
                                 <a href="#" class="rb-item">
                                     <div class="rb-pic">
-                                        <img src="img/blog/recent-4.jpg" alt="">
+                                        <img src="/assets/front/img/blog/recent-4.jpg" alt="">
                                     </div>
                                     <div class="rb-text">
                                         <h6>The Personality Trait That Makes...</h6>
@@ -287,7 +287,7 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="blog-item">
                                 <div class="bi-pic">
-                                    <img src="img/blog/blog-1.jpg" alt="">
+                                    <img src="/assets/front/img/blog/blog-1.jpg" alt="">
                                 </div>
                                 <div class="bi-text">
                                     <a href="./blog-details.html">
@@ -300,7 +300,7 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="blog-item">
                                 <div class="bi-pic">
-                                    <img src="img/blog/blog-2.jpg" alt="">
+                                    <img src="/assets/front/img/blog/blog-2.jpg" alt="">
                                 </div>
                                 <div class="bi-text">
                                     <a href="./blog-details.html">
@@ -313,7 +313,7 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="blog-item">
                                 <div class="bi-pic">
-                                    <img src="img/blog/blog-3.jpg" alt="">
+                                    <img src="/assets/front/img/blog/blog-3.jpg" alt="">
                                 </div>
                                 <div class="bi-text">
                                     <a href="./blog-details.html">
@@ -326,7 +326,7 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="blog-item">
                                 <div class="bi-pic">
-                                    <img src="img/blog/blog-4.jpg" alt="">
+                                    <img src="/assets/front/img/blog/blog-4.jpg" alt="">
                                 </div>
                                 <div class="bi-text">
                                     <a href="./blog-details.html">
@@ -339,7 +339,7 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="blog-item">
                                 <div class="bi-pic">
-                                    <img src="img/blog/blog-5.jpg" alt="">
+                                    <img src="/assets/front/img/blog/blog-5.jpg" alt="">
                                 </div>
                                 <div class="bi-text">
                                     <a href="./blog-details.html">
@@ -352,7 +352,7 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="blog-item">
                                 <div class="bi-pic">
-                                    <img src="img/blog/blog-6.jpg" alt="">
+                                    <img src="/assets/front/img/blog/blog-6.jpg" alt="">
                                 </div>
                                 <div class="bi-text">
                                     <a href="./blog-details.html">
@@ -383,27 +383,27 @@
             <div class="logo-carousel owl-carousel">
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-1.png" alt="">
+                        <img src="/assets/front/img/logo-carousel/logo-1.png" alt="">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-2.png" alt="">
+                        <img src="/assets/front/img/logo-carousel/logo-2.png" alt="">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-3.png" alt="">
+                        <img src="/assets/front/img/logo-carousel/logo-3.png" alt="">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-4.png" alt="">
+                        <img src="/assets/front/img/logo-carousel/logo-4.png" alt="">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-5.png" alt="">
+                        <img src="/assets/front/img/logo-carousel/logo-5.png" alt="">
                     </div>
                 </div>
             </div>
@@ -418,7 +418,7 @@
                 <div class="col-lg-3">
                     <div class="footer-left">
                         <div class="footer-logo">
-                            <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                            <a href="#"><img src="/assets/front/img/footer-logo.png" alt=""></a>
                         </div>
                         <ul>
                             <li>Address: 60-49 Road 11378 New York</li>
@@ -477,7 +477,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </div>
                         <div class="payment-pic">
-                            <img src="img/payment-method.png" alt="">
+                            <img src="/assets/front/img/payment-method.png" alt="">
                         </div>
                     </div>
                 </div>
