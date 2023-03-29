@@ -161,8 +161,8 @@
                 </div>
                 <nav class="nav-menu mobile-menu">
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./shop.html">Shop</a></li>
+                        <li><a href="{{ route('home') }}">Home</a></li>
+                        <li><a href="{{ route('shop') }}">Shop</a></li>
                         <li><a href="#">Collection</a>
                             <ul class="dropdown">
                                 <li><a href="#">Men's</a></li>
@@ -170,16 +170,16 @@
                                 <li><a href="#">Kid's</a></li>
                             </ul>
                         </li>
-                        <li class="active"><a href="./blog.html">Blog</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li class="active"><a href="{{  route('blog') }}">Blog</a></li>
+                        <li><a href="{{ route('contact') }}">Contact</a></li>
                         <li><a href="#">Pages</a>
                             <ul class="dropdown">
                                 <li><a href="./blog-details.html">Blog Details</a></li>
                                 <li><a href="./shopping-cart.html">Shopping Cart</a></li>
                                 <li><a href="./check-out.html">Checkout</a></li>
                                 <li><a href="./faq.html">Faq</a></li>
-                                <li><a href="./register.html">Register</a></li>
-                                <li><a href="./login.html">Login</a></li>
+                                <li><a href="{{ route('register.store') }}">Register</a></li>
+                                <li><a href="{{ route('login') }}">Login</a></li>
                             </ul>
                         </li>
                     </ul>

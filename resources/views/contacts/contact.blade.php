@@ -161,7 +161,7 @@
                 </div>
                 <nav class="nav-menu mobile-menu">
                     <ul>
-                        <li class="active"><a href="{{ route('home') }}">Home</a></li>
+                        <li><a href="{{ route('home') }}">Home</a></li>
                         <li><a href="{{ route('shop') }}">Shop</a></li>
                         <li><a href="#">Collection</a>
                             <ul class="dropdown">
@@ -170,7 +170,8 @@
                                 <li><a href="#">Kid's</a></li>
                             </ul>
                         </li>
-                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="{{  route('blog') }}">Blog</a></li>
+                        <!-- <li><a href="./blog.html">Blog</a></li> -->
                         <li class="active"><a href="{{ route('contact') }}">Contact</a></li>
                         <li><a href="#">Pages</a>
                             <ul class="dropdown">
