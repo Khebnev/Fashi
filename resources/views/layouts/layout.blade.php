@@ -170,7 +170,7 @@
                             <li><a href="./blog-details.html">Blog Details</a></li>
                             <li><a href="./shopping-cart.html">Shopping Cart</a></li>
                             <li><a href="./check-out.html">Checkout</a></li>
-                            <li><a href="./faq.html">Faq</a></li>
+                            <li><a href="{{ route('faq') }}">Faq</a></li>
                             <li><a href="{{ route('register.store') }}">Register</a></li>
                             <li><a href="{{ route('login') }}">Login</a></li>
                         </ul>
