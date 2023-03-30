@@ -128,7 +128,7 @@
             <nav class="nav-menu mobile-menu">
                 <ul>
                     <li><a href="{{ route('home') }}">Home</a></li>
-                    <li class="active"><a href="{{ route('shop') }}">Shop</a></li>
+                    <li><a href="{{ route('shop') }}">Shop</a></li>
                     <li><a href="#">Collection</a>
                         <ul class="dropdown">
                             <li><a href="#">Men's</a></li>
