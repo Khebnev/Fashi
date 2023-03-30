@@ -14,7 +14,7 @@
             <div class="ht-right">
                 <a href="#" class="login-panel"><i class="fa fa-user"></i>Login</a>
                 <div class="lan-selector">
-                    <select class="language_drop" name="countries" id="countries" style="width:300px;">
+                    <select class="language_drop" name="countries" id="countries" >
                         <option value='yt' data-image="img/flag-1.jpg" data-imagecss="flag yt"
                                 data-title="English">English</option>
                         <option value='yu' data-image="img/flag-2.jpg" data-imagecss="flag yu"

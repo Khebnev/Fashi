@@ -1,6 +1,22 @@
 @extends('layouts.layout')
 
 @section('content')
+
+    <!-- Breadcrumb Section Begin -->
+    <div class="breacrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text">
+                        <a href="#"><i class="fa fa-home"></i> Home</a>
+                        <span>FAQs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section Begin -->
+
     <!-- Faq Section Begin -->
     <div class="faq-section spad">
         <div class="container">
