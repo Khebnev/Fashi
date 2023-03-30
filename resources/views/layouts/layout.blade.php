@@ -32,7 +32,7 @@
 <!-- Product Shop Section Begin -->
 
             
-        <main class="product-shop spad">
+        <main>
            @yield('content')
         </main>
 
