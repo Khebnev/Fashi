@@ -1,6 +1,10 @@
 @extends('layouts.layout')
 
 @section('content')
+    <section class="product-shop spad">
+    <div class="container">
+        <div class="row">
+        @include('layouts.parts.sidebar')
     <div class="col-lg-9 order-1 order-lg-2">
         <div class="product-show-option">
             <div class="row">
@@ -264,4 +268,7 @@
             </a>
         </div> -->
     </div>
+    </div>
+    </div>
+</section>
 @endsection
