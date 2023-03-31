@@ -8,13 +8,13 @@
                 <div class="col-lg-12">
                     <div class="breadcrumb-text">
                         <a href="#"><i class="fa fa-home"></i> Home</a>
-                        <span>Login</span>
+                        <span>Registration</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Breadcrumb Form Section Begin -->
+<!-- Breadcrumb Form Section Begin -->
 <div class="hold-transition register-page">
     <div class="register-login-section spad">
         <div class="container">
