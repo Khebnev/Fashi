@@ -29,7 +29,7 @@
 
 
 
-<!-- Product Shop Section Begin -->
+<!-- Content Section Begin -->
 
             
         <main>
@@ -37,7 +37,7 @@
         </main>
 
 
-<!-- Product Shop Section End -->
+<!-- Content Section End -->
 
 <!-- Partner Logo Section Begin -->
 <div class="partner-logo">
