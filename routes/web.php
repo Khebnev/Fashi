@@ -33,3 +33,4 @@ Route::get('/contact', 'ContactController@index')->name('contact');
 Route::get('/blog', 'BlogController@index')->name('blog');
 Route::get('/blog-details', 'BlogDetailsController@index')->name('blog-details');
 Route::get('/faq', 'FaqController@index')->name('faq');
+Route::get('/shopping-cart', 'ShoppingCartController@index')->name('shopping-cart');
