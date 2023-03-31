@@ -8,6 +8,6 @@ class FaqController extends Controller
 {
     public function index()
     {
-        return view('faqs.faq');
+        return view('pages.faq');
     }
 }
