@@ -166,6 +166,10 @@
                 <div class="info">
                     <a href="#" class="d-block">Alexander Pierce</a>
                 </div>
+                <div>
+                    <a href="{{ route('logout') }}" class="logout-panel"><i class="fa fa-user"></i>Logout</a>
+                </div>
+                
             </div>
 
             <!-- Sidebar Menu -->
