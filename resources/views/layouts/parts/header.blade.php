@@ -12,7 +12,12 @@
                 </div>
             </div>
             <div class="ht-right">
+                @if(auth()->check()) 
+                <a href="{{ route('logout') }}" class="login-panel"><i class="fa fa-user"></i>Logout</a>
+                @else
                 <a href="{{ route('login') }}" class="login-panel"><i class="fa fa-user"></i>Login</a>
+                @endif
+                
                 <div class="lan-selector">
                     <select class="language_drop" name="countries" id="countries" >
                         <option value='yt' data-image="img/flag-1.jpg" data-imagecss="flag yt"
