@@ -178,14 +178,14 @@
                     <li class="nav-item">
                         <a href="{{ route('admin.index') }}" class="nav-link">
                             <i class="nav-icon fas fa-home"></i>
-                            <p>Главная</p>
+                            <p>Main</p>
                         </a>
                     </li>
                     <li class="nav-item has-treeview">
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-archive"></i>
                             <p>
-                                Категории
+                                Product categories
                                 <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
@@ -193,13 +193,13 @@
                             <li class="nav-item">
                                 <a href="{{ route('categories.index') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Список категорий</p>
+                                    <p>List of product categories</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('categories.create') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Новая категория</p>
+                                    <p>New product category</p>
                                 </a>
                             </li>
                         </ul>
@@ -208,7 +208,7 @@
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-archive"></i>
                             <p>
-                                Теги
+                                Tags for products
                                 <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
@@ -216,13 +216,13 @@
                             <li class="nav-item">
                                 <a href="{{ route('tags.index') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Список тегов</p>
+                                    <p>List of product tags</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('tags.create') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Новый тег</p>
+                                    <p>New product tag</p>
                                 </a>
                             </li>
                         </ul>
@@ -231,7 +231,7 @@
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-archive"></i>
                             <p>
-                                Товар
+                                Product
                                 <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
@@ -239,13 +239,13 @@
                             <li class="nav-item">
                                 <a href="{{ route('products.index') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Список товаров</p>
+                                    <p>List of products</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('products.create') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Новый Товар</p>
+                                    <p>New product</p>
                                 </a>
                             </li>
                         </ul>

@@ -7,19 +7,18 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Список категорий</h3>
+                            <h3 class="card-title">List of product categories</h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <a href="{{ route('categories.create') }}" class="btn btn-primary mb-3">Добавить
-                                категорию</a>
+                            <a href="{{ route('categories.create') }}" class="btn btn-primary mb-3">Add a new category</a>
                             @if (count($categories))
                                 <div class="table-responsive">
                                     <table class="table table-bordered table-hover text-nowrap">
                                         <thead>
                                         <tr>
                                             <th style="width: 30px">#</th>
-                                            <th>Наименование</th>
+                                            <th>Name</th>
                                             <th>Slug</th>
                                             <th>Actions</th>
                                         </tr>
@@ -51,7 +50,7 @@
                                     </table>
                                 </div>
                             @else
-                                <p>Категорий пока нет...</p>
+                                <p>Here is nothing yet...</p>
                             @endif
                         </div>
                         <!-- /.card-body -->
