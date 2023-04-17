@@ -11,9 +11,14 @@ class Post extends Model
     use HasFactory;
     use Sluggable;
 
+    public function tags()
+    {
+        return $this->belongsToMany(BlogTag::class);
+    }
+
     public function category()
     {
-        return $this->belongsToMany(Category::class);
+        return $this->belongsTo(BlogCategory::class);
     }
 
     /**

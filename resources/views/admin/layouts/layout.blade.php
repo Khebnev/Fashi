@@ -283,13 +283,13 @@
                         </a>
                         <ul class="nav">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="{{ route('blog-categories.index') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>List of categories of posts</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="{{ route('blog-categories.create') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>New category for a post</p>
                                 </a>
@@ -313,7 +313,7 @@
                     {{-- Ошибки --}}
                     @if ($errors->any())
                         <div class="alert alert-danger">
-                            <ul>
+                            <ul class="list-unstyled">
                                 @foreach ($errors->all() as $error)
                                     <li>{{ $error }}</li>
                                 @endforeach

@@ -13,9 +13,9 @@ class BlogCategory extends Model
 
     protected $fillable = ['title'];
 
-    public function products()
+    public function posts()
     {
-        return $this->hasMany(Product::class);
+        return $this->hasMany(Post::class);
     }
 
     public function sluggable(): array
