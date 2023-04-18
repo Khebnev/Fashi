@@ -13,6 +13,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'admi
    Route::resource('/tags', 'TagController');
    Route::resource('/products', 'AdminProductController');
    Route::resource('/blog-categories', 'BlogCategoryController');
+   Route::resource('/blog-tags', 'BlogTagController');
    Route::resource('/blogs', 'AdminBlogController');
 });
 
