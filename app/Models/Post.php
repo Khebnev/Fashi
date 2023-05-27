@@ -2,13 +2,11 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Relation\BelongsTo;
-use Illuminate\Database\Eloquent\Relation\BelongsToMany;
-use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Post extends Model
 {
@@ -17,7 +15,7 @@ class Post extends Model
 
     protected $fillable = ['title', 'description', 'content', 'category_id', 'thumbnail'];
 
-    public function blog_tags()
+    public function blog_tags(): BelongsToMany
     {
         return $this->belongsToMany(BlogTag::class);
     }
@@ -28,10 +26,9 @@ class Post extends Model
     }
 
     /**
-     * Return the sluggable configuration array for this model.
-     *
-     * @return array
-     */
+      * Return the sluggable configuration array for this model.
+      *
+    */
      public function sluggable(): array
     {
         return [

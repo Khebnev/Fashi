@@ -6,17 +6,18 @@ use App\Http\Controllers\Controller;
 use App\Models\BlogCategory;
 use App\Models\Post;
 use App\Models\BlogTag;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\View\View;
 
 class AdminBlogController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(): View
     {
         $posts = Post::with('blog_category', 'blog_tags')->paginate(5);
 
@@ -26,9 +27,8 @@ class AdminBlogController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(): View
     {
         $blog_categories = BlogCategory::pluck('title', 'id')->all();
         $blog_tags = BlogTag::pluck('title', 'id')->all();
@@ -38,10 +38,8 @@ class AdminBlogController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request): RedirectResponse
     {
 
         $request->validate([
@@ -58,14 +56,14 @@ class AdminBlogController extends Controller
         if ($request->hasFile('thumbnail'))
         {
             $folder = date('Y-m-d');
-            $data['thumbnail'] = $request->file('thumbnail')->store("images/{$folder}");
+            $data['thumbnail'] = $request->file('thumbnail')?->store("images/{$folder}");
         }
 //
         // $data['thumbnail'] = Post::uploadImage($request);
 
         $post = Post::create($data);
 
-        
+
         // $post->tags()->sync($request->tags);
         // dd($request->all());
         return redirect()->route('blogs.index')->with('success', 'Товар добавлен');
@@ -75,10 +73,8 @@ class AdminBlogController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(int $id)
     {
         $post = Post::find($id);
         $blog_categories = Post::pluck('title', 'id')->all();
@@ -90,11 +86,8 @@ class AdminBlogController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, int $id): RedirectResponse
     {
         $request->validate([
             'title' => 'required',
@@ -121,10 +114,8 @@ class AdminBlogController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
      */
-    public function destroy($id, Request $request)
+    public function destroy(int $id, Request $request): RedirectResponse
     {
         $post = Post::find($id);
         $post->tags()->sync($request->tags);
