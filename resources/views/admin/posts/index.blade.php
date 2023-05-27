@@ -55,11 +55,11 @@
                                                 <td>{{ $post->blog_tags->pluck('title')->join(', ') }}</td>
                                                 <td>{{ $post->created_at }}</td>
                                                 <td>
-                                                    <a href="{{ route('blogs.edit', ['post' => $post->id]) }}" class="btn btn-info btn-sm float-left mr-1">
+                                                    <a href="{{ route('blogs.edit', ['blog' => $post->id]) }}" class="btn btn-info btn-sm float-left mr-1">
                                                         <i class="fas fa-pencil-alt"></i>
                                                     </a>
 
-                                                    <form action="{{ route('blogs.destroy', ['post' => $post->id]) }}" method="post" class="float-left">
+                                                    <form action="{{ route('blogs.destroy', ['blog' => $post->id]) }}" method="post" class="float-left">
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit" class="btn btn-danger btn-sm"

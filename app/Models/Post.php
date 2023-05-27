@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Post extends Model
 {
@@ -15,9 +15,9 @@ class Post extends Model
 
     protected $fillable = ['title', 'description', 'content', 'category_id', 'thumbnail'];
 
-    public function blog_tags(): BelongsToMany
+    public function blog_tags(): HasMany
     {
-        return $this->belongsToMany(BlogTag::class);
+        return $this->hasMany(BlogTag::class);
     }
 
     public function blog_category(): BelongsTo
