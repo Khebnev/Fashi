@@ -76,7 +76,6 @@ class AdminBlogController extends Controller
      */
     public function edit(int $id)
     {
-        dd($id);
         $post = Post::find($id);
         $blog_categories = Post::pluck('title', 'id')->all();
         $blog_tags = BlogTag::pluck('title', 'id')->all();
@@ -90,7 +89,6 @@ class AdminBlogController extends Controller
      */
     public function update(Request $request, int $id): RedirectResponse
     {
-        dd($id);
         $request->validate([
             'title' => 'required',
             'category_id' => 'required',
