@@ -17,7 +17,7 @@ class BlogCategoryController extends Controller
     {
         $blog_categories = BlogCategory::paginate(3);
         // dd($blog_categories);
-        return view('admin.posts.index', compact('blog_categories'));
+        return view('admin.blogcategories.index', compact('blog_categories'));
     }
 
     /**
@@ -27,7 +27,7 @@ class BlogCategoryController extends Controller
      */
     public function create()
     {
-        return view('admin.posts.create');
+        return view('admin.blogcategories.create');
     }
 
     /**
@@ -56,7 +56,7 @@ class BlogCategoryController extends Controller
     public function edit($id)
     {
         $blog_category = BlogCategory::find($id);
-        return  view('admin.posts.edit', compact('blog_category'));
+        return  view('admin.blogcategories.edit', compact('blog_category'));
     }
 
     /**

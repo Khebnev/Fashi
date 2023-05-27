@@ -260,13 +260,13 @@
                         </a>
                         <ul class="nav">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="{{ route('blogs.index') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>List of posts</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="{{ route('blogs.create') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>New post</p>
                                 </a>
