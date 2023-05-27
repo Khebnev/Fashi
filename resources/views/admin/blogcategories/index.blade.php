@@ -1,65 +1,40 @@
 @extends('admin.layouts.layout')
 
 @section('content')
-
-    <!-- Content Wrapper. Contains page content -->
-
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1>Post</h1>
-                </div>
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Blank Page</li>
-                    </ol>
-                </div>
-            </div>
-        </div><!-- /.container-fluid -->
-    </section>
-
-    <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">List of posts</h3>
+                            <h3 class="card-title">List of blog categories</h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <a href="{{ route('blogs.create') }}" class="btn btn-primary mb-3">Add a new post</a>
-                            @if (count($posts))
+                            <a href="{{ route('blog-categories.create') }}" class="btn btn-primary mb-3">Add a new blog category</a>
+                            @if (count($blog_categories))
                                 <div class="table-responsive">
                                     <table class="table table-bordered table-hover text-nowrap">
                                         <thead>
                                         <tr>
                                             <th style="width: 30px">#</th>
                                             <th>Name</th>
-                                            <th>Category</th>
-                                            <th>Tags</th>
-                                            <th>Date</th>
+                                            <th>Slug</th>
                                             <th>Actions</th>
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        @foreach($posts as $post)
+                                        @foreach($blog_categories as $blog_category)
                                             <tr>
-                                                <td>{{ $post->id }}</td>
-                                                <td>{{ $post->title }}</td>
-                                                <td>{{ $post->blog_category['title'] }}</td>
-                                                <td>{{ $post->blog_tags->pluck('title')->join(', ') }}</td>
-                                                <td>{{ $post->created_at }}</td>
+                                                <td>{{ $blog_category->id }}</td>
+                                                <td>{{ $blog_category->title }}</td>
+                                                <td>{{ $blog_category->slug }}</td>
                                                 <td>
-                                                    <a href="{{ route('blogs.edit', ['post' => $post->id]) }}" class="btn btn-info btn-sm float-left mr-1">
+                                                    <a href="{{ route('blog-categories.edit', ['blog_category' => $blog_category->id]) }}" class="btn btn-info btn-sm float-left mr-1">
                                                         <i class="fas fa-pencil-alt"></i>
                                                     </a>
 
-                                                    <form action="{{ route('blogs.destroy', ['post' => $post->id]) }}" method="post" class="float-left">
+                                                    <form action="{{ route('blog-categories.destroy', ['blog_category' => $blog_category->id]) }}" method="post" class="float-left">
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit" class="btn btn-danger btn-sm"
@@ -75,12 +50,19 @@
                                     </table>
                                 </div>
                             @else
-                                <p>Товаров пока нет...</p>
+                                <p>Here is nothing yet...</p>
                             @endif
                         </div>
                         <!-- /.card-body -->
                         <div class="card-footer clearfix">
-                            {{ $posts->links('vendor.pagination.bootstrap-4') }}
+                            {{ $blog_categories->links('vendor.pagination.bootstrap-4') }}
+                            {{--<ul class="pagination pagination-sm m-0 float-right">
+                                <li class="page-item"><a class="page-link" href="#">«</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">»</a></li>
+                            </ul>--}}
                         </div>
                     </div>
                     <!-- /.card -->
@@ -92,7 +74,5 @@
         </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-
-    <!-- /.content-wrapper -->
 
 @endsection

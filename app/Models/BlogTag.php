@@ -5,6 +5,7 @@ namespace App\Models;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class BlogTag extends Model
 {
@@ -13,7 +14,7 @@ class BlogTag extends Model
 
     protected $fillable = ['title'];
 
-    public function posts()
+    public function posts(): BelongsToMany
     {
         return $this->belongsToMany(Post::class);
     }
